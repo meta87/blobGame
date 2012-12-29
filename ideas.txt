@@ -1,0 +1,20 @@
+Ideas for Witch Game
+
+You can shoot balls as fast as you want, but they only regen (energy) at a certain pace.
+
+Use the physics, when a player is knocked over by the ball they win
+
+use multitouch for secondary move
+
+Multitouch, makes a wall in between the two fingers
+
+Main goal: get to end of the game and beat final boss. Each time you die, you must start
+over completely, but will retain any items and xp from previous runs. 
+
+
+x 0 
+x 100
+
+enemy ai:
+
+listener function: checks if hero is within visible range - 
