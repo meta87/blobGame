@@ -2,6 +2,8 @@ level1 = {}
 level1.new = function()
 
 local director = require( "director" )
+local controls = require("controls")
+
 local hero = require("hero")
 local enemy1 = require("enemy1")
 
@@ -48,8 +50,8 @@ local function hero1Funcs()
 end
 local function hero1Touch(event)
   if event.phase == "began" and hero1selfTouch ~= true then
-    local ball = hero1:ballShoot(event,game.x,game.y)
-	game:insert(ball)
+    -- local ball = hero1:ballShoot(event,game.x,game.y)
+	-- game:insert(ball)
   end
 end
 local function hero1SelfTouch(event)
@@ -75,9 +77,10 @@ game.x = -hero1.x + screenW /2
 --enemy1:move()
 end
 
+--controls and reset level
+local controls1 = controls:controlsCreate('hero1')
 
 
---reset level
 local resetButton = display.newRect(0, 0, 200, 50)
 resetButton:setFillColor(255,0,0)
 resetButton.scene = "menu"
